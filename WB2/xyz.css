@@ -1,0 +1,28 @@
+body
+{
+    min-width: 70px;
+    min-height: 130px;
+    background: linear-gradient(45deg,#010758, #490d61);
+    display: flex;
+}
+
+#txt
+{
+    min-width: 98%;
+    min-height: 50px;
+    background: linear-gradient(300deg,#010758, #490d61);
+    display: none;
+}
+
+button
+{
+    height: 27px;
+    width: 70px;
+}
+
+textarea
+{
+    min-width: 100%;
+    max-height: 20px;
+    border-radius: 4px;
+}

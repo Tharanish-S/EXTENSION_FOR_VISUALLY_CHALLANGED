@@ -1,0 +1,56 @@
+{
+  "manifest_version": 2,
+  "name": "zxr",
+  "version": "1.0",
+  "description": "Description",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "clipboardRead",
+    "webNavigation",
+    "webRequest",
+    "webRequestBlocking",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "scripts": ["b.js"],
+    "persistent": true
+  },
+  "commands": {
+    "cmd1": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+K",
+        "mac": "Command+Shift+F"
+      },
+      "description": "cmd1"
+    },
+    "cmd2": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+A",
+        "mac": "Command+Shift+A"
+      },
+      "description": "cmd2"
+    },
+    "cmd3": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+P",
+        "mac": "Command+Shift+P"
+      },
+      "description": "cmd3"
+    },
+    "cmd4": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+H",
+        "mac": "Command+Shift+H"
+      },
+      "description": "cmd4"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["x.js"]
+    }
+  ]
+}
